@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cards - Demo Flex</title>
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .card {
+            flex: 0 0 200px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        .card .text {
+            padding: 0 20px 20px;
+        }
+
+        .card .text>button {
+            /* > means immediate childs of text that are button not nested childs*/
+            background: gray;
+            border: 0;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="cards">
+        <article class="card">
+            <img src="../assets/chandler1.jpg" alt="chandler">
+            <div class="text">
+                <h3>PinkMan</h3>
+                <p>PinkMan works in 'Statistical analysis and Data reconfiguration,' but loathes it, although it pays
+                    well.</p>
+                <button>Here's why</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="../assets/joey.jpg" alt="koey">
+            <div class="text">
+                <h3>Koey</h3>
+                <p>koey Tribbiani is a member of the Screen Actors Guild, having refused to follow in his father's
+                    footsteps and
+                    become a pipefitter.</p>
+                <button>Here's how</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="../assets/ross.jpg" alt="ross">
+            <div class="text">
+                <h3>Ross</h3>
+                <p>Ross is a paleontologist and has a Ph.D. from Columbia University.</p>
+                <button>Read more</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="../assets/rosy.jpg" alt="nica">
+            <div class="text">
+                <h3>Nica</h3>
+                <p>Nica begins dating Dr. Richard Burke (Tom Selleck), an older man who is also one of her father's
+                    best
+                    friends</p>
+                <button>Get more info..</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="../assets/phobe.jpg" alt="hoebe">
+            <div class="text">
+                <h3>Hoebe</h3>
+                <p>Hoebe Buffay is a fictional character, portrayed by Lisa Kudrow, one of the six main characters from
+                    the
+                    American sitcom Friends.</p>
+                <button>Here's why</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="../assets/raquel.jpg" alt="rachel">
+            <div class="text">
+                <h3>Rachel</h3>
+                <p>Rachel debuts in the pilot episode of Friends as a runaway bride who is distraught after abandoning
+                    her
+                    fiancé at the altar.</p>
+                <button>Stop here</button>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
