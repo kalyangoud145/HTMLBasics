@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebLayout4 - Demo Flex</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .column1 {
+            background-color: gold;
+            flex: 1;
+            display: flex;
+            flex-flow: column wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .column2 {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+
+        .column2_row {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .column2_1 {
+            flex: 2.8;
+            ;
+            display: flex;
+            flex-flow: column wrap;
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .column2_2 {
+            background-color: hotpink;
+            flex: 1;
+            display: flex;
+            flex-flow: column wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .header {
+            text-align: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 33px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="column1">
+        <div>
+            <p>Left Side Bar</p>
+        </div>
+    </div>
+
+    <div class="column2">
+        <header class="header">
+            <h1>HEADER - Sample Flexbox Example</h1>
+        </header>
+        <div class="column2_row">
+            <div class="column2_1">
+                <article>
+                    <h2>First article</h2>
+                    <p>Deccan Chronicle is an Indian English-language daily newspaper founded by Rajagopal Mudaliar in
+                        the
+                        1930s & currently owned by SREI. It is published in Hyderabad, Telangana, by Deccan Chronicle
+                        Holdings Limited. The newspaper's name derives from the originating place, the Deccan regions of
+                        India.</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Hindustan Times is an Indian English-language daily newspaper introduced by Mahatma Gandhi in
+                        1924.
+                        It played integral roles in the Indian independence movement as a nationalist and pro-Congress
+                        daily. The newspaper is owned by Shobhana Bhartia.</p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>The Hindu is an English-language daily newspaper owned by The Hindu Group, headquartered in
+                        Chennai,
+                        Tamil Nadu, India. It was started as a weekly in 1878 and became a daily in 1889.</p>
+                </article>
+                <footer class="footerContainer">Footer</footer>
+            </div>
+            <div class="column2_2">
+                <div>
+                    <p>Right Side Bar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
